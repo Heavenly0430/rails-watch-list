@@ -4,4 +4,10 @@
     <p>Documenting the movies I have watsched</p>
     <!--<a class="btn btn-flat" href="#">Apply now</a> -->
   </div>
+
+  <ul class="list-group mb-2">
+    <% @lists.each do |list| %>
+    <li class="list-group-item"><%= link_to list.name, list_path(list) %></li>
+    <% end %>
+ </ul>
 </div>
