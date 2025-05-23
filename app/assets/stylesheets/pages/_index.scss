@@ -4,7 +4,7 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 250px 0;
 }
 
 .banner h1 {
@@ -24,4 +24,34 @@
 
 .banner-image{
   background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(/assets/totoro.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-list h1{
+  font-size: 24px;
+}
+
+.banner-list li a{
+  text-decoration: none;
+  color: rgb(5, 43, 6);
+}
+
+.banner-list li{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.125rem;
+  border: 0;
+  margin-right: 10px;
+}
+
+.banner-list .list-bt{
+  text-decoration: none;
+  background-color: rgb(5, 43, 6);
+}
+
+.banner-list .list-bt a{
+  color: white;
 }

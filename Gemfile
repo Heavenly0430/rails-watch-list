@@ -71,3 +71,7 @@ gem "simple_form"
 gem "sassc-rails"
 
 gem "ostruct"
+
+gem "lucide-rails"
+
+gem "rails_icons", "~> 1.3"

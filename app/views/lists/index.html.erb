@@ -3,15 +3,23 @@
     <h1>My <strong>Movie Lists</strong></h1>
     <p>Documenting the movies I have watsched</p>
     <!--<a class="btn btn-flat" href="#">Apply now</a> -->
+
+    <div class="banner-list">
+      <h1>My List</h1>
+      <ul class="list-group list-group-horizontal mb-2 ">
+        <% @lists.each do |list| %>
+          <li class="list-group-item"><%= link_to list.name, list_path(list) %></li>
+        <% end %>
+
+        <li class="list-group-item list-bt">
+          <i class="fa-solid fa-plus" style="color: white;"></i>
+          <%= link_to "Create a new list", new_list_path %>
+        </li>
+      </ul>
+
+    </div>
+
   </div>
+
+
 </div>
-
-<h1>My List</h1>
-
-<ul class="list-group mb-2">
-  <% @lists.each do |list| %>
-  <li class="list-group-item"><%= link_to list.name, list_path(list) %></li>
-  <% end %>
-</ul>
-
-<%= link_to "Create a new list", new_list_path %>
